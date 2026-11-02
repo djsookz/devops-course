@@ -26,7 +26,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: ./python-helloworld
+          file: ./python-helloworld/Dockerfile
           push: true
           tags: dimakadocker/python-helloworld:latest
           platforms: linux/amd64,linux/arm64
