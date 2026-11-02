@@ -1,0 +1,9 @@
+INFO:werkzeug:WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.135:5000
+INFO:werkzeug:Press CTRL+C to quit
+INFO:app:Main request successfull
+INFO:werkzeug:192.168.0.135 - - [22/Oct/2026 13:23:14] "GET / HTTP/1.1" 200 -
+INFO:app:Status request successfull
+INFO:werkzeug:192.168.0.135 - - [22/Oct/2026 13:23:38] "GET /status HTTP/1.1" 200 -
