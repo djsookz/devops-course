@@ -28,5 +28,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: python-helloworld:latest
-          platforms: linux/amd64,linux/arm64s
+          tags: dimakadocker/python-helloworld:latest
+          platforms: linux/amd64,linux/arm64
