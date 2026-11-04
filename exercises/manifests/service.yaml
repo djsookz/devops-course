@@ -10,8 +10,8 @@ spec:
   ports:
   - port: 8111
     protocol: TCP
-    targetPort: 80
+    targetPort: 5000 # ВАЖНО: Ако Python апп-ът ти слуша на 5000, смени това на 5000!
   selector:
     app: nginx
     tag: alpine
-  type: ClusterIP
+  type: NodePort # Променено от ClusterIP на NodePort
