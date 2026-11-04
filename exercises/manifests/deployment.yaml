@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -24,6 +25,6 @@ spec:
         tag: alpine
     spec:
       containers:
-      - name: nginx-alpine
-        image: dimakadocker/python-helloworld:${{ github.sha }}
-        imagePullPolicy: Always
+        - name: nginx-alpine
+          image: $IMAGE
+          imagePullPolicy: Always
