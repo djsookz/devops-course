@@ -25,5 +25,5 @@ spec:
     spec:
       containers:
       - name: nginx-alpine
-        image: dimakadocker/python-helloworld:latest
+        image: dimakadocker/python-helloworld:${{ github.sha }}
         imagePullPolicy: Always
