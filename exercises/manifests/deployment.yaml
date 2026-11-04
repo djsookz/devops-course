@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -24,6 +25,6 @@ spec:
         tag: alpine
     spec:
       containers:
-      - image: nginx:alpine
-        imagePullPolicy: IfNotPresent
-        name: nginx-alpine
+        - name: nginx-alpine
+          image: dimakadocker/python-helloworld:4199e07feae47f8333f8d44d9f9e2eda8b1707e6
+          imagePullPolicy: Always
