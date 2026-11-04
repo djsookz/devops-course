@@ -31,3 +31,10 @@ jobs:
           push: true
           tags: dimakadocker/python-helloworld:${{ github.sha }}
           platforms: linux/amd64,linux/arm64
+
+      - name: Update image tag in deployment.yaml
+        uses: datamonsters/replace-action@v2
+        with:
+          files: 'exercises/manifests/deployment.yaml'
+          placeholder: 'tag:latest'
+          replacement: '${{ github.sha }}'
