@@ -29,5 +29,5 @@ jobs:
           context: ./python-helloworld
           file: ./python-helloworld/Dockerfile
           push: true
-          tags: dimakadocker/python-helloworld:latest
+          tags: dimakadocker/python-helloworld:${{ github.sha }}
           platforms: linux/amd64,linux/arm64
