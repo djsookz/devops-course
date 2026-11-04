@@ -26,5 +26,5 @@ spec:
     spec:
       containers:
         - name: nginx-alpine
-          image: dimakadocker/python-helloworld:4199e07feae47f8333f8d44d9f9e2eda8b1707e6
+          image: dimakadocker/python-helloworld:latest
           imagePullPolicy: Always
