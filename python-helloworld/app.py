@@ -29,7 +29,7 @@ def metrics():
 @app.route("/")
 def hello():
     app.logger.info('Main request successfull')
-    return "The test is successfull!"
+    return "The test is successfull!!!"
 
 if __name__ == "__main__":
     logging.basicConfig(filename='app.log',level=logging.DEBUG)
